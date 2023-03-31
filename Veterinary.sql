@@ -3,7 +3,6 @@ Show databases;
 create database VetDB CHARACTER SET utf8 COLLATE UTF8_GENERAL_CI ;
 
 
-
 Use VetDB;
 Show tables;
 
@@ -28,8 +27,8 @@ create table AnimalDetails (
 
   Insert into AnimalDetails (animalName, name,breed, gender,picture,picture_path,address,weight) values
   ('Dog', 'Luke','Golden Retriever', 'Male', load_file('C:/AnimalPictures/animal1.jpg'),'/animal1.jpg','123 WoodFord',250),
-  ('cat', 'joe','Huskey', 'Male', load_file('C:/AnimalPictures/animal2.jpg'),'/animal2.jpg','123 ballybane',250),
-  ('parrot', 'frank','lovebirds', 'female', load_file('C:/AnimalPictures/animal3.jpg'),'/animal3.jpg','knock co mayo',20),
+  ('cat', 'joe','Huskey', 'Female', load_file('C:/AnimalPictures/animal2.jpg'),'/animal2.jpg','123 ballybane',250),
+  ('parrot', 'Lilly','lovebirds', 'female', load_file('C:/AnimalPictures/animal3.jpg'),'/animal3.jpg','knock co mayo',20),
   ('frog', 'lilly','tree frog', 'male', load_file('C:/AnimalPictures/animal4.jpg'),'/animal4.jpg','123 dublin',5),
   ('Dog', 'Buddy','ShihPoo', 'Male', load_file('C:/AnimalPictures/animal5.jpg'),'/animal5.jpg','Drum Knock Co Mayo',30);
 
@@ -87,7 +86,7 @@ describe AppointmentDetails;
   Insert into AppointmentDetails (staffID,animalID,dateOfApp,timeOfApp,location,symptoms,diagnosis,medication) values
   (1,1,'2022-6-20','16:20:00','Castlebar','Vomiting','Posined','Antibotics'),
   (2,2,'2022-5-25','12:20:00','Castlebar','netuired','netuired','Onsior'),
-  (3,3,'2023-3-10','15:00:00','Castlebar','stop eating, have laboured breathing, head swelling, discharge form their eyes or nose and diarrhoea','Avian Flu','oseltamivir'),
+  (2,3,'2023-3-10','15:00:00','Castlebar','stop eating, have laboured breathing, head swelling, discharge form their eyes or nose and diarrhoea','Avian Flu','oseltamivir'),
   (4,4,'2023-1-12','19:00:00','Castlebar','Drowsiness,Abnormal wasting ','Ranavirus','Since there is no treatment for Ranavirus, management is focused on biosecurity, quarantine, and decontamination to prevent the spread of the virus to other animals and new environments. Any infected animals should be quarantined to prevent infection of other animals.'),
   (5,5,'2023-2-25','12:20:00','Castlebar','Panic Attacks','Anexity','Zesty Paws Stress and Anxiety Calming Bites.');
 
